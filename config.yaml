@@ -1,30 +1,3 @@
-rosewater: &rosewater "#f4dbd6"
-flamingo: &flamingo "#f0c6c6"
-pink: &pink "#f5bde6"
-mauve: &mauve "#c6a0f6"
-red: &red "#ed8796"
-maroon: &maroon "#ee99a0"
-peach: &peach "#f5a97f"
-yellow: &yellow "#eed49f"
-green: &green "#a6da95"
-teal: &teal "#8bd5ca"
-sky: &sky "#91d7e3"
-sapphire: &sapphire "#7dc4e4"
-blue: &blue "#8aadf4"
-lavender: &lavender "#b7bdf8"
-text: &text "#cad3f5"
-subtext1: &subtext1 "#b8c0e0"
-subtext0: &subtext0 "#a5adcb"
-overlay2: &overlay2 "#939ab7"
-overlay1: &overlay1 "#8087a2"
-overlay0: &overlay0 "#6e738d"
-surface2: &surface2 "#5b6078"
-surface1: &surface1 "#494d64"
-surface0: &surface0 "#363a4f"
-base: &base "#24273a"
-mantle: &mantle "#1e2030"
-crust: &crust "#181926"
-
 general:
   # Commands to run when the WM has started (e.g. to run a script or launch
   # another application). Here we are running a batch script to start Zebar.
@@ -230,11 +203,8 @@ keybindings:
   - commands: ["shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe"]
     bindings: ["escape+enter"]
 
-  # - commands: ["shell-exec wt"]
-  #   bindings: ["escape+enter"]
-  #
-  - commands: ["shell-exec wt -p \"PowerShell (Administrator)\""]
-    bindings: ["escape+shift+enter"]
+  - commands: ["shell-exec %ProgramData%/Microsoft/Windows/Start Menu/Programs/WezTermAdmin.lnk"]
+    bindings: ["shift+enter"]
 
   - commands: ["shell-exec %LOCALAPPDATA%/BraveSoftware/Brave-Browser/Application/brave.exe"]
     bindings: ["escape+w"]
@@ -248,8 +218,11 @@ keybindings:
   - commands: ['shell-exec %USERPROFILE%\scoop\apps\btop\current\btop.exe']
     bindings: ["escape+shift+r"]
 
-  - commands: ['shell-exec files.exe']
+  - commands: ['shell-exec explorer %USERPROFILE%']
     bindings: ["escape+r"]
+
+  - commands: ['shell-exec nvim']
+    bindings: ["escape+v"]
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - commands: ["focus --next-workspace"]
