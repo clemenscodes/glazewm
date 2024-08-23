@@ -200,13 +200,18 @@ keybindings:
   - commands: ["wm-redraw"]
     bindings: ["escape+shift+w"]
 
-  - commands: ["shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe"]
+  # - commands: ["shell-exec %USERPROFILE%/.cargo/bin/wezterm-gui.exe"]
+  #   bindings: ["escape+enter"]
+  #
+  - commands: ["shell-exec wt"]
     bindings: ["escape+enter"]
 
-  - commands: ["shell-exec %ProgramData%/Microsoft/Windows/Start Menu/Programs/WezTermAdmin.lnk"]
-    bindings: ["shift+enter"]
-
-  - commands: ["shell-exec %LOCALAPPDATA%/BraveSoftware/Brave-Browser/Application/brave.exe"]
+  # - commands: ["shell-exec %ProgramData%/Microsoft/Windows/Start Menu/Programs/WezTermAdmin.lnk"]
+  #   bindings: ["shift+enter"]
+  #
+  # - commands: ["shell-exec %LOCALAPPDATA%/BraveSoftware/Brave-Browser/Application/brave.exe"]
+  #   bindings: ["escape+w"]
+  - commands: ['shell-exec %ProgramFiles%\Mozilla Firefox\firefox.exe']
     bindings: ["escape+w"]
 
   - commands: ['shell-exec %ProgramFiles%\Mozilla Thunderbird\thunderbird.exe']
@@ -215,13 +220,16 @@ keybindings:
   - commands: ['shell-exec %LOCALAPPDATA%\FlowLauncher\Flow.Launcher.exe']
     bindings: ["escape+d"]
 
+  - commands: ['shell-exec %LOCALAPPDATA%\FlowLauncher\Flow.Launcher.exe']
+    bindings: ["escape+back"]
+
   - commands: ['shell-exec %USERPROFILE%\scoop\apps\btop\current\btop.exe']
     bindings: ["escape+shift+r"]
 
   - commands: ['shell-exec explorer %USERPROFILE%']
     bindings: ["escape+r"]
 
-  - commands: ['shell-exec nvim']
+  - commands: ['shell-exec nvim-qt']
     bindings: ["escape+v"]
 
   # Focus the next/previous workspace defined in `workspaces` config.
