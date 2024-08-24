@@ -200,12 +200,15 @@ keybindings:
   - commands: ["wm-redraw"]
     bindings: ["escape+shift+w"]
 
-  # - commands: ["shell-exec %USERPROFILE%/.cargo/bin/wezterm-gui.exe"]
-  #   bindings: ["escape+enter"]
-  #
-  - commands: ["shell-exec wt"]
+  - commands: ["shell-exec %USERPROFILE%/.cargo/bin/wezterm-gui.exe"]
     bindings: ["escape+enter"]
 
+  - commands: ["shell-exec %USERPROFILE%/.cargo/bin/zed.exe"]
+    bindings: ["escape+z"]
+
+  # - commands: ["shell-exec wt"]
+  #   bindings: ["escape+enter"]
+  #
   # - commands: ["shell-exec %ProgramData%/Microsoft/Windows/Start Menu/Programs/WezTermAdmin.lnk"]
   #   bindings: ["shift+enter"]
   #
