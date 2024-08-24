@@ -212,11 +212,11 @@ keybindings:
   # - commands: ["shell-exec %ProgramData%/Microsoft/Windows/Start Menu/Programs/WezTermAdmin.lnk"]
   #   bindings: ["shift+enter"]
   #
-  # - commands: ["shell-exec %LOCALAPPDATA%/BraveSoftware/Brave-Browser/Application/brave.exe"]
-  #   bindings: ["escape+w"]
-  - commands: ['shell-exec %ProgramFiles%\Mozilla Firefox\firefox.exe']
+  - commands: ["shell-exec %LOCALAPPDATA%/BraveSoftware/Brave-Browser/Application/brave.exe"]
     bindings: ["escape+w"]
-
+  # - commands: ['shell-exec %ProgramFiles%\Mozilla Firefox\firefox.exe']
+  #   bindings: ["escape+w"]
+  #
   - commands: ['shell-exec %ProgramFiles%\Mozilla Thunderbird\thunderbird.exe']
     bindings: ["escape+e"]
 
