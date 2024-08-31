@@ -210,7 +210,7 @@ keybindings:
     bindings: ["escape+enter"]
 
   # - commands: ["shell-exec %ProgramData%/Microsoft/Windows/Start Menu/Programs/WezTermAdmin.lnk"]
-  #   bindings: ["shift+enter"]
+  #   bindings: ["escape+enter"]
   #
   - commands: ["shell-exec %LOCALAPPDATA%/BraveSoftware/Brave-Browser/Application/brave.exe"]
     bindings: ["escape+w"]
